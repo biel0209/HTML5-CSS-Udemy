@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Olá!</h1>
+  <form action="">
+    <label for="pnome">Primeiro nome:</label>
+    <input type="text" id="pnome" placeholder="Primeiro nome" required><br><br>
+    <label for="unome">Último nome:</label>
+    <input type="text" id="unome" placeholder="Ultimo nome" required><br><br>
+    
+    <label">
+    <strong>
+      Qual seu nível como programador?</label><br><br>
+    </strong> 
+    <label>
+      <input type="radio" name="nivel" value="iniciante" required>Comecei a pouco tempo
+    </label>
+    <label>
+      <input type="radio" name="nivel" value="medio" required>Estudo há mais de um ano
+    </label>
+    <label>
+      <input type="radio" name="nivel" value="avancado" required>Estudo há mais de 2 anos
+    </label>
+    <br><br>
+
+    <label for="select-escolaridade"><strong>Sua escolaridade:</strong></label>
+    <select id="select-escolaridade" required>
+      <option selected disabled value="">Selecione</option>
+      <option>Ensino médio completo</option>
+      <option>Ensino médio incompleto</option>
+      <option>Ensino superior incompleto</option>
+      <option>Ensino superior completo</option>
+    </select><br><br>
+
+    <label>
+      <strong>Quais tecnologias você conhece?</strong>
+    </label><br><br>
+
+    <label for="tec1">HTML</label>
+    <input type="checkbox" id="tec1" value="HTML">
+
+    <label for="tec2">JavaScript</label>
+    <input type="checkbox" id="tec2" value="JavaScript">
+
+    <label for="tec3">CSS</label>
+    <input type="checkbox" id="tec3" value="CSS">
+    
+    <br><br>
+    <input type="submit" value="Cadastrar"><br><br>
+  </form>
+</body>
+</html>
