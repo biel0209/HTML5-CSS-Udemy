@@ -8,6 +8,7 @@ HTML5 e CSS Aprendendo criar sites do zero na pratica
 
 ### <strong>Tag &lt;a&gt;</strong>
 - target="_blank" -> redirecionar em uma nova guia
+  - Ao usar isso, é interessante utilizar os atributos noopener e noreferrer para impedir que um link externo assuma o controle da janela do navegador de origem do usuário e para evitar que sites externos saibam que você incluiu links para o material deles em seu site, respectivamente.
 
 ### <strong>&lt;div&gt; x &lt;span&gt;</strong>
 - &lt;div&gt; -> elemento de nível de bloco
@@ -52,3 +53,63 @@ HTML5 e CSS Aprendendo criar sites do zero na pratica
 
 - CSS: Cascading Style Sheets (Folhas de estilo)
 - Responsável pelo design, tamanhos, posicionamento, cores
+
+### <strong>3 formas de aplicar estilos CSS em uma página</strong>
+
+- Inline CSS - Direto no html/tag (não é uma boa prática).    
+  ```
+  <h1 style="color: red; font-size: 14px;"&gt;Bem vindo!</h1>
+  ```
+- CSS Interno - Direto no head do html, dentro da tag style.
+  ``` 
+  <style>
+    h1{
+      color: green;
+    }
+  </style>
+    
+  ```     
+   
+- CSS Externo - Criar um arquivo separado .css com seu estilo.
+
+### <strong>Usar classes ou id</strong>
+- Classe: quando quiser aplicar estilo em mais de um elemento.
+- Id: quando quiser aplicar estilo em apenas um elemento.
+
+### <strong>Margin x Padding</strong>
+- Margin: aplicada ao espaçamento externo;
+  - Margin: auto -> útil para centralizar
+- Padding: aplicado ao espaçamento interno;
+
+### <strong>Box-sizing</strong>
+- border-box -> não deixa o conteúdo sair para fora do box -> boa prática.
+- content-box -> permite o contéudo extrapolar o box -> má prática.
+
+### <strong>Position</strong>
+- Static -> padrão
+- Relative -> o elemento é posicionado em relação a sua posição normal. (top, bottom, left, right)
+- Absolute -> o elemento é posicionado em relação ao seu elemento pai mais próximo que possui relative, se não tiver relative, é posicionado em relação ao body. 
+- Fixed -> o elemento é posicionado em uma posição fixa, independente do tamanho do view port.
+- Sticky -> o elemento é posicionado em uma posição fixa em relação ao scrool -> interessante para o header do site.
+
+### <strong>"Reset" do CSS - IMPORTANTE!</strong>
+- Sempre ao iniciar um projeto, uma boa prática é realizar o "reset" do css para remover estilos que já vem por padrão em algumas tags html, margin, etc. Exemplo de alguns estilos que geralmente são removidos:
+  ```
+  *{
+    box-sizing: border-box; /* evitar que o contéudo ultrapasse seu box */
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  ```
+
+### <strong>Flex Box</strong>
+- flex-direction -> por padrão é row, onde os elementos filho se organizam em linha, mas pode ser modificado para column ou até row-reverse e column-reverse.
+- flex-basis -> define um tamanho fixo para cada elemento filho.
+- flex-shrink
+- order -> definir a ordem dos elementos filhos
+- justify-content -> alinhar horizontalmente -> aplicado ao elemento pai, juntamente do display flex
+  - space-between -> aplicar espaçamento igual entre os elementos filhos
+  - space-around -> aplicar espaçamento igual entre os elementos filhos, tanto para left quanto right.
+- align items -> alinhar verticalmente -> aplicado ao elemento pai, juntamente do display flex
+- align self -> alinhar verticalmente o elemento filho 
