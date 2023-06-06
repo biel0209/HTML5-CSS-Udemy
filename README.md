@@ -102,7 +102,7 @@ HTML5 e CSS Aprendendo criar sites do zero na pratica
     outline: 0;
   }
   ```
-
+ 
 ### <strong>Flex Box</strong>
 - flex-direction -> por padrão é row, onde os elementos filho se organizam em linha, mas pode ser modificado para column ou até row-reverse e column-reverse.
 - flex-basis -> define um tamanho fixo para cada elemento filho.
@@ -113,3 +113,12 @@ HTML5 e CSS Aprendendo criar sites do zero na pratica
   - space-around -> aplicar espaçamento igual entre os elementos filhos, tanto para left quanto right.
 - align items -> alinhar verticalmente -> aplicado ao elemento pai, juntamente do display flex
 - align self -> alinhar verticalmente o elemento filho 
+
+### <strong>Animação de zoom ao passar o mouse</strong>
+1. Aplicar a propriedade transition ao button, definindo o tempo de transição desejável. Ex. -> transition: 0.9s;
+2. Aplicar a propriedade transform: scale() ao hover do button, definindo o tamanho que desejar do zoom. Ex. -> transform: scale(1.5);
+
+### <strong>Propriedade z-index</strong>
+- Definir uma ordem de prioridade para elementos sobreporem outros. Ex -> z-index: 9;
+- Por padrão, todo elemento tem z-index auto.
+- Se uma navbar tiver z-index = 9, e um elemento p, um z-index = 8, significa que a navbar irá sobrepor o elemento p. 
