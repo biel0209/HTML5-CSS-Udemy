@@ -122,3 +122,6 @@ HTML5 e CSS Aprendendo criar sites do zero na pratica
 - Definir uma ordem de prioridade para elementos sobreporem outros. Ex -> z-index: 9;
 - Por padrão, todo elemento tem z-index auto.
 - Se uma navbar tiver z-index = 9, e um elemento p, um z-index = 8, significa que a navbar irá sobrepor o elemento p. 
+
+### <strong>Responsividade - Media queries</strong
+  - Definir um max-width para ser o break point, onde será definido as mudanças de css para telas menores ou maiores.
